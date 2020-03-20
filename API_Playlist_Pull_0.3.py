@@ -17,7 +17,7 @@ username = 'USER' # Your Spotify username
 scope = 'user-library-read playlist-modify-public playlist-read-private'
     #for avaliable scopes see https://developer.spotify.com/web-api/using-scopes/
 
-redirect_uri= 'https://developer.spotify.com/dashboard/applications/144c271440e34fb48a19ffaeeb540243'
+redirect_uri= ''
     # Paste your Redirect URI here
 
 client_credentials_manager = SpotifyClientCredentials(client_id = client_id, client_secret =client_secret)
