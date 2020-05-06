@@ -133,16 +133,12 @@ def bar_plot(feat, Title = 'None', ylabel = 'None'):
 # bar_plot('tempo', 'Mean Tempo', 'Tempo')
 # bar_plot('popularity', 'Mean Popularity Comparison', 'popularity')
 
-sp_big
+sp_big_plots = sp_big.drop('duration_ms').drop('time_signature')
 
-for items in sp_big.keys():
+for items in sp_big_plots.keys():
     # for titles in ['Key', ]
     bar_plot(items,'Mean {} comparison'.format(items), items)
 
-
-
-# for i in
-# bar_plot()
 
 # tempos = [sp_big['tempo'], my_big['tempo']]
 # width = 0.35
