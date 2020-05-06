@@ -138,34 +138,3 @@ sp_big_plots = sp_big.drop('duration_ms').drop('time_signature')
 for items in sp_big_plots.keys():
     # for titles in ['Key', ]
     bar_plot(items,'Mean {} comparison'.format(items), items)
-
-
-# tempos = [sp_big['tempo'], my_big['tempo']]
-# width = 0.35
-#
-# fig, ax = plt.subplots()
-# rects1 = ax.bar(0, tempos[0], width, label='Spotify')
-# rects2 = ax.bar(0 + 1*width, tempos[1], width, label='My Music')
-# ax.set_ylabel('Tempo')
-# ax.set_xticklabels('')
-# ax.set_title('Mean Tempo Comparison')
-# ax.legend()
-# plt.tick_params(axis = 'x', bottom = False, top = False)
-# plt.show()
-
-
-
-# plt.bar(0, sp_big['tempo'], 0.25, label = 'Spotify', color = 'lightblue')
-# plt.bar(x+1.1*0.25, tempos[1], 0.25, label = 'My music', color = 'lightgreen')
-#
-# plt.subplot(221)
-# width = 0.35
-# plt.bar(ind, tempo_jhon.mean() , width, label='Jonathan', color = 'lightslategray')
-# plt.bar(ind + 1.1*width, tempo_emy.mean(), width, label='Emily', color = 'mediumvioletred')
-#
-# plt.ylabel('Mean [BPM]', fontsize = 14)
-# plt.title('Tempo Means')
-#
-# plt.xticks(ind + width / 2, (list(tempo_emy)[:]), fontsize = 12)
-# plt.legend(loc='best')
-# style.use("ggplot")
