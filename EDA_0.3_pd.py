@@ -136,5 +136,6 @@ def bar_plot(feat, Title = 'None', ylabel = 'None'):
 sp_big_plots = sp_big.drop('duration_ms').drop('time_signature')
 
 for items in sp_big_plots.keys():
-    # for titles in ['Key', ]
     bar_plot(items,'Mean {} comparison'.format(items), items)
+
+# -------------------------------------------------------------
