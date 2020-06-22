@@ -8,9 +8,9 @@ from wordcloud import *
 from collections import *
 
 #Pull the data files
-sp_files = glob.glob("sp*.csv")
+sp_files = glob.glob("SpApp/sp*.csv")
 sp_files
-my_files = glob.glob("[!sp]*.csv")
+my_files = glob.glob("User/[!sp]*.csv")
 my_files
 
 
